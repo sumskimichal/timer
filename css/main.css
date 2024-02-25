@@ -30,7 +30,7 @@ body {
 .app-body .image-section {
   position: relative;
   height: 400px;
-  background-image: url("img/default.jpg");
+  background-image: url("../img/default.jpg");
   background-size: cover;
   background-position: center;
 }
