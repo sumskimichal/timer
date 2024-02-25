@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0287b91664.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="counter-app">
+        <div class="settings">
+            <h1>ustawienia</h1>
+            <label for="event-name">Nazwa wydarzenia:</label>
+            <input type="text" id="event-name" value="30-tka Żonci">
+            <table class="date">
+                <tr>
+                    <td><label for="event-day">Dzień:</label></td>
+                    <td><label for="event-month">Miesiąc:</label></td>
+                    <td><label for="event-year">Rok:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="event-day" min="1" max="31" value="6"></td>
+                    <td><input type="number" id="event-month" min="1" max="12" value="3"></td>
+                    <td><input type="number" id="event-year" value="2024"></td>
+                </tr>
+            </table>
+            <label for="event-image">Link do obrazka:</label>
+            <input type="text" id="event-image" value="/img/default.jpg">
+            <button class="save">Zapisz</button>
+        </div>
+
+        <div class="app-body">
+            <div class="image-section">
+                <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+            </div>
+            <div class="time-section">
+                <h3><span class="event">30-tka Żonci</span> za:</h3>
+                <div class="time-cards">
+                    <div class="card">
+                        <p class="days-count number">6</p>
+                        <p class="card-title">Dni</p>
+                    </div>
+                    <div class="card">
+                        <p class="hours-count number">6</p>
+                        <p class="card-title">Godzin</p>
+                    </div>
+                    <div class="card">
+                        <p class="minutes-count number">6</p>
+                        <p class="card-title">Minut</p>
+                    </div>
+                    <div class="card">
+                        <p class="seconds-count number">6</p>
+                        <p class="card-title">Sekund</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
